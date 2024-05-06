@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        knight: ['var(--font-knight)', 'sans-serif'],
+        knight: ['var(--knight-font)', 'sans-serif'],
       },
       colors: {
         primary: '#2892E8',
