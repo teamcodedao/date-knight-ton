@@ -10,7 +10,7 @@ import twitterImg from './twitter.svg';
 
 export default function Home() {
   return (
-    <main className='relative mx-auto min-h-screen max-w-[1440px] overflow-hidden'>
+    <main className='relative mx-auto min-h-screen max-w-[1440px] overflow-hidden bg-white'>
       <Image
         src={cloud1Img}
         alt=''
