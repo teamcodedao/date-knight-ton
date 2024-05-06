@@ -31,6 +31,37 @@ export default function Home() {
           {process.env.NEXT_PUBLIC_COIN_ADDRESS}
         </div>
       </hgroup>
+
+      <div
+        className={clsx(
+          'mt-48 flex pb-[13.75rem]',
+          'bg-[url(/road.png)] bg-bottom bg-no-repeat'
+        )}
+      >
+        <div className='flex grow flex-col'>
+          <img src='/soldier-1.gif' alt='' className='w-[512px]' />
+          <img src='/soldier-2.gif' alt='' className='w-[314px]' />
+          <img src='/soldier-3.gif' alt='' className='w-[349px]' />
+        </div>
+        <div className='relative mr-28 shrink-0'>
+          <img
+            src='/soldier-4.gif'
+            alt=''
+            className='absolute -right-24 top-1/2 w-[276px] -translate-y-1/2'
+          />
+          <img src='/castle-1.png' alt='' className='relative z-10' />
+          <img
+            src='/castle-2.png'
+            alt=''
+            className='absolute -left-44 -top-40'
+          />
+          <img
+            src='/castle-3.gif'
+            alt=''
+            className='absolute right-[12.5rem] top-[-17rem]'
+          />
+        </div>
+      </div>
     </main>
   );
 }
