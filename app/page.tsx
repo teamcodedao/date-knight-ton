@@ -14,15 +14,15 @@ export default function Home() {
       <Image
         src={cloud1Img}
         alt=''
-        className='absolute -left-24 -top-12 z-[-1] w-[277px]'
+        className='absolute -left-24 -top-12 w-[277px]'
       />
-      <div className='absolute right-2 top-1 z-[-1] flex gap-x-2 md:right-20 lg:top-12 lg:gap-x-24'>
+      <div className='absolute right-2 top-1 flex gap-x-2 md:right-20 lg:top-12 lg:gap-x-24'>
         <Social social='telegram' className='translate-y-20' />
         <Social social='twitter' />
       </div>
       <hgroup
         className={clsx(
-          'pt-40 text-center sm:w-fit ',
+          'relative z-10 pt-40 text-center sm:w-fit',
           'sm:pl-10 md:pl-20 lg:pl-32'
         )}
       >
@@ -37,6 +37,7 @@ export default function Home() {
 
       <div
         className={clsx(
+          'relative z-20',
           'mt-48 flex pb-[13.75rem]',
           'bg-[url(/road.png)] bg-bottom bg-no-repeat'
         )}
@@ -66,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='relative z-[-1] ml-[-100px] mt-[30px] w-[150%] origin-top-left rotate-[-24.1deg] bg-primary py-10'>
+      <div className='relative z-10 ml-[-100px] mt-[30px] w-[150%] origin-top-left rotate-[-24.1deg] bg-primary py-10'>
         <Marquee autoFill className='overflow-hidden'>
           <span className='inline-block px-10 text-[64px] text-white'>
             $datekni
@@ -107,17 +108,17 @@ export default function Home() {
             <img
               src='/soldier-8.gif'
               alt=''
-              className='absolute -bottom-5 left-0 z-[-1] w-[326px]'
+              className='absolute -bottom-5 left-0 w-[326px]'
             />
             <img
               src='/soldier-9.gif'
               alt=''
-              className='absolute -bottom-16 -right-72 z-[-1] w-[410px]'
+              className='absolute -bottom-16 -right-72 w-[410px]'
             />
-            <h2 className='text-center font-knight text-9xl text-primary'>
+            <h2 className='relative z-10 text-center font-knight text-9xl text-primary'>
               Community
             </h2>
-            <div className='mt-7 flex justify-center gap-x-10'>
+            <div className='relative z-10 mt-7 flex justify-center gap-x-10'>
               <a href={process.env.NEXT_PUBLIC_TELEGRAM_URL} target='_telegram'>
                 <Image src={telegramImg} alt='' className='size-[88px]' />
               </a>
