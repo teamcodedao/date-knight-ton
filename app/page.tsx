@@ -67,9 +67,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='relative z-10 ml-[-100px] mt-[30px] w-[150%] origin-top-left rotate-[-24.1deg] bg-primary py-10'>
+      <div className='relative z-10 ml-[-100px] mt-[30px] w-[150%] origin-top-left rotate-[-24.1deg] bg-primary py-6 lg:py-10'>
         <Marquee autoFill className='overflow-hidden'>
-          <span className='inline-block px-10 text-[64px] text-white'>
+          <span className='inline-block px-10 text-5xl text-white lg:text-[64px]'>
             $datekni
           </span>
         </Marquee>
@@ -83,9 +83,13 @@ export default function Home() {
           <div className='flex shrink-0 flex-col items-center'>
             <img src='/soldier-5.gif' alt='' className='w-[512px]' />
             <hgroup className='text-center'>
-              <h2 className='font-knight text-9xl text-primary'>Tokenomics</h2>
-              <div className='mt-5 text-5xl font-bold'>Supply: 400.000.000</div>
-              <div className='mt-5 text-[32px]'>
+              <h2 className='font-knight text-7xl text-primary sm:text-8xl md:text-9xl'>
+                Tokenomics
+              </h2>
+              <div className='mt-5 text-4xl font-bold sm:text-5xl'>
+                Supply: 400.000.000
+              </div>
+              <div className='mt-5 break-words text-xl sm:text-2xl md:text-[32px]'>
                 No presale | No farming | No secret algo <br /> No claim process
                 | No paid marketing <br /> No team allocation | No favoritism to
                 whales
@@ -95,7 +99,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='mt-32'>
+      <div className='mt-32 max-lg:mt-10'>
         <div className='flex'>
           <div className='overflow-hidden max-lg:hidden'>
             <img
@@ -104,7 +108,7 @@ export default function Home() {
               className='-mb-16 w-[664px] self-end'
             />
           </div>
-          <div className='relative shrink-0'>
+          <div className='relative shrink-0 grow'>
             <img
               src='/soldier-8.gif'
               alt=''
@@ -115,10 +119,10 @@ export default function Home() {
               alt=''
               className='absolute -bottom-16 -right-72 w-[410px]'
             />
-            <h2 className='relative z-10 text-center font-knight text-9xl text-primary'>
+            <h2 className='relative z-10 text-center font-knight text-7xl text-primary sm:text-8xl md:text-9xl'>
               Community
             </h2>
-            <div className='relative z-10 mt-7 flex justify-center gap-x-10'>
+            <div className='relative z-10 mb-10 mt-7 flex justify-center gap-x-10'>
               <a href={process.env.NEXT_PUBLIC_TELEGRAM_URL} target='_telegram'>
                 <Image src={telegramImg} alt='' className='size-[88px]' />
               </a>
